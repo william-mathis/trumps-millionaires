@@ -1,0 +1,1122 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+
+/* THIS IS A RESET
+DO NOT EDIT THIS STUFF */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+
+/* BEGIN YOUR STYLES HERE */
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.top {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-family: sans-serif;
+    background-image: url("images/trump_green.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+
+/*.top_image {
+position: relative;
+max-width: 100%;
+height: 90vh;
+overflow-x: hidden;
+}*/
+
+.top_title {
+    position: absolute;
+    top: 27%;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    width: 98%;
+    /*padding-left: .5em;
+    padding-right: .5em;*/
+}
+
+.top_sub {
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    width: 95%;
+    padding-left: .5em;
+}
+
+.top_sub_2 {
+    position: absolute;
+    top: 68%;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    width: 95%;
+    padding-left: .5em;
+}
+
+.byline {
+    position: absolute;
+    bottom: 2%;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    line-height: 1.4em;
+    margin-top: .5em;
+    font-size: 1.1em;
+    margin-left: .5em;
+    margin-right: 1em;
+}
+
+.text {
+    /* margin-top: 10px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 680px;
+    font-family: sans-serif;
+    /* display: inline-block; */
+    /* margin: 0 auto; */
+}
+
+.heading {
+    margin-top: 10px;
+}
+
+.first_letter {
+    font-size: 2.5em;
+}
+
+.buttons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .4em;
+    border: 1.2em;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #568ea3;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+button {
+    font-size: 1.2em;
+    border-style: solid;
+    border-color: black;
+    background-color: #e7e7e7;
+    color: black;
+    margin: 3px;
+}
+
+.container {
+    border-top: 1em;
+    border-bottom: 1em;
+    border-color: #e7e7e7;
+    border-style: solid;
+    background-color: #e7e7e7
+}
+
+.show_text {
+    display: none;
+    font-family: ‘Open Sans’, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.show_text.active {
+    display: block;
+}
+
+
+/*.cards {
+position: relative;
+border-width: thick;
+border-color: #FF0000;
+max-width: 100%;
+max-height: 100%;
+border-style: solid;
+display: none;
+margin-top: 10px;
+margin-bottom: 10px;
+}*/
+
+img.cards2 {
+    max-width: 100%;
+    /*position: relative;*/
+}
+
+.text-identifier {
+    position: absolute;
+    background-color: white;
+    border-color: #ffffff;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    color: white;
+    border-style: solid;
+    background-color: #568ea3;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    text-align: right;
+    margin-right: 0px;
+    width: 95%;
+    height: auto;
+}
+
+.pres_seal {
+    max-width: 114px;
+    position: absolute;
+    left: 6px;
+    /*padding-top: 5px;*/
+    top: 6px;
+    z-index: 2;
+}
+
+.item {
+    position: relative;
+    /*.cards {*/
+    /*position: relative;*/
+    /*border-width: thick;*/
+    /*border-color: #FF0000;*/
+    max-width: 100%;
+    /*max-height: 100%;*/
+    /*border-style: solid;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    height: 94vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.item.active {
+    display: block;
+    /*position: relative;*/
+}
+
+button.active {
+    background-color: #983628;
+}
+
+.item .front, .item .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 90%;*/
+    /*    height: 90%;*/
+    transition: .5s transform ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /*text-align: center;*/
+    padding: 4px;
+    /*margin: 10px;*/
+    /*border: black;*/
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-color: #568ea3;
+    height: 100%;
+    width: calc(100% - 2px);
+}
+
+.item .back {
+    transform: rotateY(-180deg);
+    /*z-index: 0;*/
+    /*position: absolute;
+top: 0px;*/
+}
+
+
+/*.item {
+position: relative;
+float: left;
+width: 50%;
+padding-bottom: 60%;
+}*/
+
+.item.turn {
+    transform: rotateY(180deg) scaleX(-1);
+}
+
+.item.turn .front {
+    transform: rotateY(-180deg);
+}
+
+.item.turn .back {
+    transform: rotateY(0deg);
+}
+
+.text_back {
+    position: relative;
+    width: 95%;
+    max-width: 400px;
+    /* margin-top: 30px; */
+    /* margin-left: 5px; */
+    /* margin-right: 8px; */
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 1em;
+    /* background: rgba(255, 0, 0, 0.1); */
+    z-index: 500;
+    color: black;
+}
+
+.photo_cred {
+    bottom: 0;
+}
+
+.background {
+    position: absolute;
+    background-color: #fff;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+th {
+    text-align: center;
+    vertical-align: middle;
+    font-size: .7em;
+    font-weight: 700;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    padding-left: .3em;
+    padding-right: .3em;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    font-size: .6em;
+    padding-left: .4em;
+    padding-right: .4em;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/*tr#cliddell_back {
+    font-size: .5em;
+}*/
+
+#augustine {
+    background-image: url("images/raugustine2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#augustine_back {
+    background-image: url("images/raugustine_back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#bannon {
+    background-image: url("images/sbannon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bannon_back {
+    background-image: url("images/sbannon_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jbash {
+    background-image: url("images/jbash-original.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jbash_back {
+    background-image: url("images/jbash_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#zbash {
+    background-image: url("images/zbash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#zbash_back {
+    background-image: url("images/zbash_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gcohn {
+    background-image: url("images/gcohn.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gcohn_back {
+    background-image: url("images/gcohn_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kconway {
+    background-image: url("images/kconway.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kconway_back {
+    background-image: url("images/kconway_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rcordish {
+    background-image: url("images/rcordish.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rcordish_back {
+    background-image: url("images/rcordish_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mdelrahim {
+    background-image: url("images/mdelrahim.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mdelrahim_back {
+    background-image: url("images/mdelrahim_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jdestefano {
+    background-image: url("jdestefano.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jdestefano_back {
+    background-image: url("jdestefano.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#udhillon {
+    background-image: url("images/udhillon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#udhillon_back {
+    background-image: url("images/udhillon_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jeisenberg {
+    background-image: url("images/jeisenberg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jeisenberg_back {
+    background-image: url("images/jeisenberg_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*
+#bepshteyn {
+background-image: url("images/bepshteyn_back.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#bepshteyn_back {
+background-image: url("images/bepshteyn_back.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}*/
+
+#jgreenblatt {
+    background-image: url("images/jgreenblatt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jgreenblatt_back {
+    background-image: url("images/jgreenblatt_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kushner_front {
+    background-image: url("images/kushner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kushner_back {
+    background-image: url("images/kushner_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jhahn {
+    background-image: url("images/jhahn.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jhahn_back {
+    background-image: url("images/jhahn_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gkatsas {
+    background-image: url("images/gkatsas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gkatsas_back {
+    background-image: url("images/gkatsas_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cliddell {
+    background-image: url("images/cliddell.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cliddell_back {
+    background-image: url("images/cliddell_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kmcfarland {
+    background-image: url("images/kmcfarland.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kmcfarland_back {
+    background-image: url("images/kmcfarland_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dpowell {
+    background-image: url("images/dpowell.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dpowell_back {
+    background-image: url("images/dpowell_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jschultz {
+    background-image: url("images/jschultz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jschultz_back {
+    background-image: url("images/jschultz_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rshah {
+    background-image: url("images/rshah.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rshah_back {
+    background-image: url("images/rshah_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mshort {
+    background-image: url("images/mshort.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+
+#mshort_back {
+    background-image: url("images/mshort_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    backface-visibility: hidden;
+}
+
+#sspicer {
+    background-image: url("images/sspicer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sspicer_back {
+    background-image: url("images/sspicer_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bottom_text {
+    display: inline-block;
+}
+
+
+/* Tablet/Desktop overrides */
+
+
+/*@media(min-width: 681px) {
+    .item {
+        position: relative;
+        width: 52%;
+        /* max-height: 100%; */
+
+
+/* border-style: solid; */
+
+
+/*margin-top: 10px;
+margin-bottom: 10px;
+display: none;
+height: 45vh;
+float: left;
+
+}*/
+
+
+/* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+body {
+    /*max-width: 620px;*/
+    margin: 0 auto;
+}
+
+
+/*Mobile Landscape orientation overrides*/
+
+@media (orientation:landscape) {
+    .top {
+        background-image: url("images/trump_green_desktop.jpg");
+        background-size: 100%;
+        /*height: 95vh;*/
+        overflow: hidden;
+        /*margin-top: -180px;*/
+    }
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 415px) {
+    .item {
+        position: relative;
+        width: 309px;
+        /* max-height: 100%; */
+        /* border-style: solid; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+        height: 400px;
+        float: left;
+        /*display: inline-block;*/
+    }
+    .container {
+        /*display: inline-block;*/
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .all_cards {
+        display: inline-block;
+    }
+    .top {
+        background-size: cover;
+        height: 95vh;
+        overflow: hidden;
+        /*margin-left: -74px;*/
+        /*margin-right: -74px;*/
+    }
+    .text {
+        margin: 0 auto;
+    }
+    .top_title {
+        font-size: calc(4vw + 4vh + 2vmin);
+    }
+    .text_back.too_big {
+        font-size: 0.8em;
+        padding: 0px;
+        line-height: 0.695;
+    }
+    .not_too_big {
+        line-height: 1;
+    }
+    .text_back.too_big2 {
+        font-size: 0.8em;
+        padding: 0px;
+        line-height: 1.095;
+    }
+    .big_table {
+        line-height: 0.9px;
+    }
+    .okay_bigger {
+        line-height: 8px;
+    }
+    #augustine {
+        background-image: url("images/raugustine2.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #augustine_back {
+        background-image: url("images/raugustine_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #bannon {
+        background-image: url("images/sbannon.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #bannon_back {
+        background-image: url("images/sbannon_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jbash {
+        background-image: url("images/jbash-original.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jbash_back {
+        background-image: url("images/jbash_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #zbash {
+        background-image: url("images/zbash.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #zbash_back {
+        background-image: url("images/zbash_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #gcohn {
+        background-image: url("images/gcohn.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #gcohn_back {
+        background-image: url("images/gcohn_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kconway {
+        background-image: url("images/kconway.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kconway_back {
+        background-image: url("images/kconway_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #rcordish {
+        background-image: url("images/rcordish.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #rcordish_back {
+        background-image: url("images/rcordish_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #mdelrahim {
+        background-image: url("images/mdelrahim.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #mdelrahim_back {
+        background-image: url("images/mdelrahim_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jdestefano {
+        background-image: url("jdestefano.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jdestefano_back {
+        background-image: url("jdestefano.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #udhillon {
+        background-image: url("images/udhillon.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #udhillon_back {
+        background-image: url("images/udhillon_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jeisenberg {
+        background-image: url("images/jeisenberg.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jeisenberg_back {
+        background-image: url("images/jeisenberg_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*
+    #bepshteyn {
+    background-image: url("images/bepshteyn_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    #bepshteyn_back {
+    background-image: url("images/bepshteyn_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }*/
+    #jgreenblatt {
+        background-image: url("images/jgreenblatt.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jgreenblatt_back {
+        background-image: url("images/jgreenblatt_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kushner_front {
+        background-image: url("images/kushner.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jhahn {
+        background-image: url("images/jhahn.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jhahn_back {
+        background-image: url("images/jhahn_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #gkatsas {
+        background-image: url("images/gkatsas.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #gkatsas_back {
+        background-image: url("images/gkatsas_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kushner_back {
+        background-image: url("images/kushner_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cliddell {
+        background-image: url("images/cliddell.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cliddell_back {
+        background-image: url("images/cliddell_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kmcfarland {
+        background-image: url("images/kmcfarland.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #kmcfarland_back {
+        background-image: url("images/kmcfarland_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #dpowell {
+        background-image: url("images/dpowell.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #dpowell_back {
+        background-image: url("images/dpowell_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jschultz {
+        background-image: url("images/jschultz.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #jschultz_back {
+        background-image: url("images/jschultz_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #rshah {
+        background-image: url("images/rshah.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #rshah_back {
+        background-image: url("images/rshah_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #mshort {
+        background-image: url("images/mshort.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #mshort_back {
+        background-image: url("images/mshort_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #sspicer {
+        background-image: url("images/sspicer.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #sspicer_back {
+        background-image: url("images/sspicer_back.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+
+/* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+
+/* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .item {
+        position: relative;
+        width: 309px;
+        /* max-height: 100%; */
+        /* border-style: solid; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+        height: 400px;
+        float: left;
+    }
+    .top {
+        background-image: url("images/trump_green_desktop.jpg");
+        background-size: 100%;
+        /*height: 95vh;*/
+        overflow: hidden;
+        /*margin-top: -180px;*/
+    }
+    .top_title {
+        font-size: calc(5vw + 4vh + 2vmin);
+    }
+    .all_cards {
+        display: inline-block;
+    }
+    #bottom_text {
+        margin: 0 auto;
+        display: inherit;
+    }
+}
